@@ -16,8 +16,6 @@ const observer = new IntersectionObserver(
 );
 
 menuLinks.forEach((menuLink) => {
-
-
   const hash = menuLink.getAttribute("href");
   const target = document.querySelector(hash);
   if (target) {
