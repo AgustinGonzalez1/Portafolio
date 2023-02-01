@@ -7,7 +7,7 @@
 	color: white;
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 50px;
+	margin-top: 51px;
 	@media (min-width: 1300px) {
 		width: 1200px;
 	}
@@ -42,9 +42,28 @@
 					color: #264de4;
 					z-index: 1;
 				}
+        > .fa-bootstrap {
+          color: #7013F2;
+					z-index: 1;
+        }
+        > .fa-sass{
+          color: #CC6699;
+					z-index: 1;
+        }
+        > .fa-git-alt{
+          color: #F24535;
+					z-index: 1;
+        }
+        > .fa-github{
+          color: #35465C;
+					z-index: 1;
+        }
 			}
 		}
 	}
+  > p{
+    margin-top: 15px;
+  }
 }
 .html {
 	position: relative;
@@ -55,6 +74,7 @@
 		background-color: #d94625;
 		height: 200%;
 		animation: border 2.5s linear infinite;
+    transition: .5s;
 	}
 	&::after {
 		content: "";
@@ -63,6 +83,9 @@
 		border-radius: 5px;
 		background-color: #191919;
 	}
+  &:hover::before{
+    width: 400px;
+  }
 }
 
 .css {
@@ -74,6 +97,7 @@
 		background-color: #264de4;
 		height: 200%;
 		animation: border 2.5s linear infinite;
+    transition: .5s;
 	}
 	&::after {
 		content: "";
@@ -82,7 +106,115 @@
 		border-radius: 5px;
 		background-color: #191919;
 	}
+  &:hover::before{
+    width: 400px;
+  }
 }
+
+.bootstrap {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 40px;
+		background-color: #7013F2;
+		height: 200%;
+		animation: border 2.5s linear infinite;
+    transition: .5s;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 2px;
+		border-radius: 5px;
+		background-color: #191919;
+	}
+  &:hover::before{
+    width: 400px;
+  }
+}
+
+.sass {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 40px;
+		background-color: #CC6699;
+		height: 200%;
+		animation: border 2.5s linear infinite;
+    transition: .5s;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 2px;
+		border-radius: 5px;
+		background-color: #191919;
+	}
+  &:hover::before{
+    width: 400px;
+  }
+}
+
+.git {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 40px;
+		background-color: #F24535;
+		height: 200%;
+		animation: border 2.5s linear infinite;
+    transition: .5s;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 2px;
+		border-radius: 5px;
+		background-color: #191919;
+	}
+  &:hover::before{
+    width: 400px;
+  }
+}
+
+.github {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 40px;
+		background-color: #35465C;
+		height: 200%;
+		animation: border 2.5s linear infinite;
+    transition: .5s;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 2px;
+		border-radius: 5px;
+		background-color: #191919;
+	}
+  &:hover::before{
+    width: 400px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes border {
 	from {

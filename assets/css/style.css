@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
   scroll-behavior: smooth;
-  scroll-padding: 80px;
+  scroll-padding: 130px;
 }
 
 a {
@@ -164,7 +164,7 @@ header {
 header > div {
   background-color: #191919;
   width: calc(100% - 100px);
-  margin: 50px 0px;
+  margin: 50px 0px 0px 0px;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -196,6 +196,12 @@ header > div > h1 {
     font-size: 32px;
   }
 }
+header > div > h4 {
+  margin-bottom: 5px;
+}
+header > div > p {
+  font-size: small;
+}
 
 @keyframes gradient {
   0% {
@@ -225,7 +231,7 @@ main {
   color: white;
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
 @media (min-width: 1300px) {
   .sobremi {
@@ -239,9 +245,10 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 50px;
 }
 .sobremi > .certificados > .certificado {
-  width: 500px;
+  width: 450px;
   border: 3px solid #ea52f8;
   border-radius: 3px;
   margin: 10px;
@@ -266,7 +273,7 @@ main {
   display: block;
   color: white;
   padding: 5px;
-  border-radius: 3px;
+  border-radius: 2px;
   border: 2px solid #0066ff;
   transition: 0.5s;
 }
@@ -274,7 +281,7 @@ main {
   background-color: #0066ff;
 }
 .sobremi > .certificados > .certificado1 {
-  width: 500px;
+  width: 450px;
   border: 3px solid #ea52f8;
   border-radius: 3px;
   margin: 10px;
@@ -303,7 +310,7 @@ main {
   color: white;
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-top: 51px;
 }
 @media (min-width: 1300px) {
   .habilidades {
@@ -344,6 +351,25 @@ main {
   color: #264de4;
   z-index: 1;
 }
+.habilidades > .iconos > .contenedor > .icono > .fa-bootstrap {
+  color: #7013F2;
+  z-index: 1;
+}
+.habilidades > .iconos > .contenedor > .icono > .fa-sass {
+  color: #CC6699;
+  z-index: 1;
+}
+.habilidades > .iconos > .contenedor > .icono > .fa-git-alt {
+  color: #F24535;
+  z-index: 1;
+}
+.habilidades > .iconos > .contenedor > .icono > .fa-github {
+  color: #35465C;
+  z-index: 1;
+}
+.habilidades > p {
+  margin-top: 15px;
+}
 
 .html {
   position: relative;
@@ -355,6 +381,7 @@ main {
   background-color: #d94625;
   height: 200%;
   animation: border 2.5s linear infinite;
+  transition: 0.5s;
 }
 .html::after {
   content: "";
@@ -362,6 +389,9 @@ main {
   inset: 2px;
   border-radius: 5px;
   background-color: #191919;
+}
+.html:hover::before {
+  width: 400px;
 }
 
 .css {
@@ -374,6 +404,7 @@ main {
   background-color: #264de4;
   height: 200%;
   animation: border 2.5s linear infinite;
+  transition: 0.5s;
 }
 .css::after {
   content: "";
@@ -381,6 +412,101 @@ main {
   inset: 2px;
   border-radius: 5px;
   background-color: #191919;
+}
+.css:hover::before {
+  width: 400px;
+}
+
+.bootstrap {
+  position: relative;
+}
+.bootstrap::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  background-color: #7013F2;
+  height: 200%;
+  animation: border 2.5s linear infinite;
+  transition: 0.5s;
+}
+.bootstrap::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 5px;
+  background-color: #191919;
+}
+.bootstrap:hover::before {
+  width: 400px;
+}
+
+.sass {
+  position: relative;
+}
+.sass::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  background-color: #CC6699;
+  height: 200%;
+  animation: border 2.5s linear infinite;
+  transition: 0.5s;
+}
+.sass::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 5px;
+  background-color: #191919;
+}
+.sass:hover::before {
+  width: 400px;
+}
+
+.git {
+  position: relative;
+}
+.git::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  background-color: #F24535;
+  height: 200%;
+  animation: border 2.5s linear infinite;
+  transition: 0.5s;
+}
+.git::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 5px;
+  background-color: #191919;
+}
+.git:hover::before {
+  width: 400px;
+}
+
+.github {
+  position: relative;
+}
+.github::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  background-color: #35465C;
+  height: 200%;
+  animation: border 2.5s linear infinite;
+  transition: 0.5s;
+}
+.github::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 5px;
+  background-color: #191919;
+}
+.github:hover::before {
+  width: 400px;
 }
 
 @keyframes border {
@@ -390,4 +516,128 @@ main {
   to {
     transform: rotate(360deg);
   }
+}
+.proyectos {
+  margin-top: 51px;
+  width: calc(100% - 100px);
+  background-color: #191919;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1300px) {
+  .proyectos {
+    width: 1200px;
+  }
+}
+.proyectos > .box {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.proyectos > .box > .tarjeta {
+  width: 500px;
+  border: solid 3px #ea52f8;
+  margin: 10px;
+  border-radius: 3px;
+  position: relative;
+}
+.proyectos > .box > .tarjeta > img {
+  width: 100%;
+}
+.proyectos > .box > .tarjeta > .visitar {
+  height: 70px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.proyectos > .box > .tarjeta > .visitar > a {
+  display: block;
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+  border: 2px solid #0066ff;
+  transition: 0.5s;
+}
+.proyectos > .box > .tarjeta > .visitar > a:hover {
+  background-color: #0066ff;
+}
+
+@media (min-width: 1300px) {
+  .contactame {
+    width: 1200px;
+  }
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #191919;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  margin-top: 50px;
+}
+footer > .redes {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 50px;
+}
+footer > .redes > .linkdin, footer > .redes .instagram {
+  width: 60px;
+  height: 60px;
+  border-radius: 2px;
+  position: relative;
+  transition: 0.3s;
+}
+footer > .redes > .linkdin > a, footer > .redes .instagram > a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+footer > .redes > .linkdin > a > i, footer > .redes .instagram > a > i {
+  margin: auto;
+}
+footer > .redes > .linkdin {
+  border: solid 2px #0e76a8;
+}
+footer > .redes > .linkdin > a > i {
+  color: #0e76a8;
+}
+footer > .redes > .linkdin:hover {
+  background-color: rgba(14, 119, 168, 0.3019607843);
+}
+footer > .redes > .instagram {
+  border: solid 2px #bc1888;
+}
+footer > .redes > .instagram > a > i {
+  color: #bc1888;
+}
+footer > .redes > .instagram:hover {
+  background-color: rgba(188, 24, 136, 0.3019607843);
+}
+footer > p {
+  font-size: 12px;
+  margin: 10px 0px;
 }

@@ -7,7 +7,7 @@
 	color: white;
 	display: flex;
 	flex-direction: column;
-  margin-bottom: 50px;
+  margin-top: 50px;
 	@media (min-width: 1300px) {
 		width: 1200px;
 	}
@@ -20,8 +20,9 @@
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+    gap: 50px;
 		> .certificado {
-			width: 500px;
+			width: 450px;
 			border: 3px solid #ea52f8;
 			border-radius: 3px;
 			margin: 10px;
@@ -44,7 +45,7 @@
 					display: block;
 					color: white;
 					padding: 5px;
-					border-radius: 3px;
+					border-radius: 2px;
 					border: 2px solid #0066ff;
 					transition: 0.5s;
 					&:hover {
@@ -54,7 +55,7 @@
 			}
 		}
 		> .certificado1 {
-			width: 500px;
+			width: 450px;
 			border: 3px solid #ea52f8;
 			border-radius: 3px;
 			margin: 10px;
