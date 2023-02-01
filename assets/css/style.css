@@ -47,7 +47,7 @@ body {
   position: fixed;
   width: 100%;
   height: 80px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #191919;
   z-index: 1;
 }
 .navbar > #nav-toggle {
@@ -215,7 +215,8 @@ main {
   justify-content: center;
   align-items: center;
 }
-main > .sobremi {
+
+.sobremi {
   width: calc(100% - 100px);
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -224,21 +225,22 @@ main > .sobremi {
   color: white;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 @media (min-width: 1300px) {
-  main > .sobremi {
+  .sobremi {
     width: 1200px;
   }
 }
-main > .sobremi .texto > p {
+.sobremi > .texto > p {
   margin: 5px 0px 10px 0px;
 }
-main > .sobremi .certificados {
+.sobremi > .certificados {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-main > .sobremi .certificados .certificado {
+.sobremi > .certificados > .certificado {
   width: 500px;
   border: 3px solid #ea52f8;
   border-radius: 3px;
@@ -246,10 +248,10 @@ main > .sobremi .certificados .certificado {
   display: flex;
   position: relative;
 }
-main > .sobremi .certificados .certificado > img {
+.sobremi > .certificados > .certificado > img {
   width: 100%;
 }
-main > .sobremi .certificados .certificado > .boton {
+.sobremi > .certificados > .certificado > .boton {
   height: 70px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -260,7 +262,7 @@ main > .sobremi .certificados .certificado > .boton {
   justify-content: center;
   align-items: center;
 }
-main > .sobremi .certificados .certificado > .boton > a {
+.sobremi > .certificados > .certificado > .boton > a {
   display: block;
   color: white;
   padding: 5px;
@@ -268,10 +270,10 @@ main > .sobremi .certificados .certificado > .boton > a {
   border: 2px solid #0066ff;
   transition: 0.5s;
 }
-main > .sobremi .certificados .certificado > .boton > a:hover {
+.sobremi > .certificados > .certificado > .boton > a:hover {
   background-color: #0066ff;
 }
-main > .sobremi .certificados > .certificado1 {
+.sobremi > .certificados > .certificado1 {
   width: 500px;
   border: 3px solid #ea52f8;
   border-radius: 3px;
@@ -279,10 +281,10 @@ main > .sobremi .certificados > .certificado1 {
   position: relative;
   display: flex;
 }
-main > .sobremi .certificados > .certificado1 > img {
+.sobremi > .certificados > .certificado1 > img {
   width: 100%;
 }
-main > .sobremi .certificados > .certificado1 > .borroso {
+.sobremi > .certificados > .certificado1 > .borroso {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -290,4 +292,78 @@ main > .sobremi .certificados > .certificado1 > .borroso {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.habilidades {
+  width: calc(100% - 100px);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+@media (min-width: 1300px) {
+  .habilidades {
+    width: 1200px;
+  }
+}
+.habilidades > .iconos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+.habilidades > .iconos > .contenedor {
+  display: flex;
+  flex-direction: column;
+}
+.habilidades > .iconos > .contenedor > .icono {
+  margin: 10px;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 65px;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.habilidades > .iconos > .contenedor > .icono > i {
+  color: #d94625;
+  z-index: 1;
+}
+
+.html {
+  position: relative;
+}
+.html::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  background-color: #d94625;
+  height: 200%;
+  animation: border 2.5s linear infinite;
+}
+
+@keyframes border {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.html::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 5px;
+  background-color: #191919;
 }
