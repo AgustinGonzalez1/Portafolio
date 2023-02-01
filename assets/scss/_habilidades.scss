@@ -17,9 +17,10 @@
 		width: 100%;
 		flex-wrap: wrap;
 		margin-top: 5px;
+		gap: 20px;
 		> .contenedor {
-      display: flex;
-      flex-direction: column;
+			display: flex;
+			flex-direction: column;
 			> .icono {
 				margin: 10px;
 				border-radius: 5px;
@@ -32,38 +33,62 @@
 				padding: 5px;
 				position: relative;
 				cursor: pointer;
-        overflow: hidden;
-				> i {
+				overflow: hidden;
+				> .fa-html5 {
 					color: #d94625;
-          z-index: 1;
+					z-index: 1;
+				}
+				> .fa-css3-alt {
+					color: #264de4;
+					z-index: 1;
 				}
 			}
 		}
 	}
 }
-.html{
-  position: relative;
-  &::before{
-    content: '';
-    position: absolute;
-    width: 40px;
-    background-color: #d94625;
-    height: 200%;
-    animation: border 2.5s linear infinite;
-  }
+.html {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 40px;
+		background-color: #d94625;
+		height: 200%;
+		animation: border 2.5s linear infinite;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 2px;
+		border-radius: 5px;
+		background-color: #191919;
+	}
 }
-@keyframes border{
-  from{
-    transform: rotate(0deg);
-  }
-  to{
-    transform: rotate(360deg);
-  }
+
+.css {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 40px;
+		background-color: #264de4;
+		height: 200%;
+		animation: border 2.5s linear infinite;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 2px;
+		border-radius: 5px;
+		background-color: #191919;
+	}
 }
-.html::after{
-  content: '';
-  position: absolute;
-  inset: 2px;
-  border-radius: 5px;
-  background-color: #191919;
+
+@keyframes border {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }

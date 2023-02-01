@@ -316,6 +316,7 @@ main {
   width: 100%;
   flex-wrap: wrap;
   margin-top: 5px;
+  gap: 20px;
 }
 .habilidades > .iconos > .contenedor {
   display: flex;
@@ -335,8 +336,12 @@ main {
   cursor: pointer;
   overflow: hidden;
 }
-.habilidades > .iconos > .contenedor > .icono > i {
+.habilidades > .iconos > .contenedor > .icono > .fa-html5 {
   color: #d94625;
+  z-index: 1;
+}
+.habilidades > .iconos > .contenedor > .icono > .fa-css3-alt {
+  color: #264de4;
   z-index: 1;
 }
 
@@ -351,6 +356,32 @@ main {
   height: 200%;
   animation: border 2.5s linear infinite;
 }
+.html::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 5px;
+  background-color: #191919;
+}
+
+.css {
+  position: relative;
+}
+.css::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  background-color: #264de4;
+  height: 200%;
+  animation: border 2.5s linear infinite;
+}
+.css::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 5px;
+  background-color: #191919;
+}
 
 @keyframes border {
   from {
@@ -359,11 +390,4 @@ main {
   to {
     transform: rotate(360deg);
   }
-}
-.html::after {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  border-radius: 5px;
-  background-color: #191919;
 }
