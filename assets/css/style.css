@@ -381,7 +381,7 @@ main {
   background-color: #d94625;
   height: 200%;
   animation: border 2.5s linear infinite;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 .html::after {
   content: "";
@@ -404,7 +404,7 @@ main {
   background-color: #264de4;
   height: 200%;
   animation: border 2.5s linear infinite;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 .css::after {
   content: "";
@@ -427,7 +427,7 @@ main {
   background-color: #7013F2;
   height: 200%;
   animation: border 2.5s linear infinite;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 .bootstrap::after {
   content: "";
@@ -450,7 +450,7 @@ main {
   background-color: #CC6699;
   height: 200%;
   animation: border 2.5s linear infinite;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 .sass::after {
   content: "";
@@ -473,7 +473,7 @@ main {
   background-color: #F24535;
   height: 200%;
   animation: border 2.5s linear infinite;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 .git::after {
   content: "";
@@ -496,7 +496,7 @@ main {
   background-color: #35465C;
   height: 200%;
   animation: border 2.5s linear infinite;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 .github::after {
   content: "";
