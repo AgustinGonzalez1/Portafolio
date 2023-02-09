@@ -562,9 +562,14 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.proyectos > .box > .tarjeta > .visitar > .link {
+  display: flex;
   gap: 20px;
 }
-.proyectos > .box > .tarjeta > .visitar > a {
+.proyectos > .box > .tarjeta > .visitar > .link > a {
   display: block;
   color: white;
   padding: 5px;
@@ -572,7 +577,7 @@ main {
   border: 2px solid #0066ff;
   transition: 0.5s;
 }
-.proyectos > .box > .tarjeta > .visitar > a:hover {
+.proyectos > .box > .tarjeta > .visitar > .link > a:hover {
   background-color: #0066ff;
 }
 
